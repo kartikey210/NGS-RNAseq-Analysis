@@ -1,69 +1,73 @@
+ End-to-end RNA-Seq analysis pipeline using real sequencing data
 # NGS RNA-Seq Analysis Pipeline
 
 ## Overview
-This project demonstrates a complete RNA-Seq data analysis pipeline from raw sequencing data to visualization.
+This project demonstrates a complete RNA-Seq data analysis workflow, starting from raw sequencing data to alignment and visualization. It replicates real-world bioinformatics pipelines used in research and industry.
 
 ---
 
 ## Workflow
-SRA → FASTQ → QC → Trimming → Alignment → BAM → Visualization
+
+SRA → FASTQ → Quality Control → Trimming → Alignment → BAM → Visualization
 
 ---
+
 ## Dataset
-- Source: NCBI SRA
-- Accession: SRR390728
-- Type: RNA-Seq (single-end)
+
+- Source: NCBI SRA  
+- Accession: SRR390728  
+- Type: RNA-Seq (single-end)  
+- Total Reads: ~7 million  
 
 ---
 
 ## Tools Used
-- SRA Toolkit
-- Falco / FastQC
-- Trimmomatic
-- Bowtie2
-- SAMtools
-- IGV
+
+- SRA Toolkit  
+- Falco (FastQC alternative)  
+- Trimmomatic  
+- Bowtie2  
+- SAMtools  
+- IGV  
 
 ---
 
-## Steps
+## Pipeline Steps
 
-### 1. Data Download
-Downloaded RNA-Seq data using SRA Toolkit and converted to FASTQ.
+### Data Acquisition
+- Downloaded sequencing data using SRA Toolkit  
+- Converted SRA → FASTQ format  
 
-### 2. Quality Control
-Performed QC using Falco and identified low-quality bases.
+### Quality Control
+- Performed QC using Falco  
+- Identified low-quality bases at read ends  
 
-### 3. Trimming
-Applied Trimmomatic to remove low-quality reads.
+### Trimming
+- Applied Trimmomatic  
+- Removed low-quality bases to improve read quality  
 
-### 4. Alignment
-Aligned reads to human genome (hg38) using Bowtie2.
+### Alignment
+- Aligned reads to human reference genome (hg38) using Bowtie2  
 
-### 5. Evaluation
-Used SAMtools flagstat → **93.5% mapping rate**
+### Alignment Evaluation
+- Used SAMtools flagstat  
+- Achieved **93.5% mapping rate**  
 
-### 6. Visualization
-Visualized BAM file using IGV.
+### Visualization
+- Visualized BAM file using IGV  
+- Verified correct read alignment and coverage  
 
 ---
 
 ## Results
-- Total reads: ~7 million  
-- Mapping rate: **93.5%**
+
+- Total Reads: ~7.1 million  
+- Mapped Reads: ~93.5%  
+- High-quality alignment confirmed  
 
 ---
 
-## Conclusion
-
-The pipeline successfully processed RNA-Seq data and demonstrated high-quality alignment and visualization.
-
-This project demonstrates hands-on experience with real RNA-seq data analysis workflows used in bioinformatics research and industry.
-
----
-
-
-## Screenshots
+## Results Visualization
 
 ### IGV Visualization (TP53 Gene)
 ![IGV Result](screenshots/igv_tp53_alignment.png)
@@ -82,3 +86,18 @@ The IGV visualization shows aligned RNA-seq reads mapped to the TP53 gene region
 
 #### Adapter Content
 ![Adapter Content](screenshots/adapter_content.png)
+
+---
+
+## Conclusion
+
+The pipeline successfully processed RNA-Seq data, demonstrating effective preprocessing, high-quality alignment, and accurate visualization of genomic reads.
+
+This project reflects hands-on experience with real bioinformatics workflows used in research and industry.
+
+---
+
+## Author
+
+**Kartikeya Sharma**  
+Bioinformatics Student
