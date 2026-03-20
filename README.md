@@ -1,8 +1,8 @@
- End-to-end RNA-Seq analysis pipeline using real sequencing data
-# NGS RNA-Seq Analysis Pipeline
-
 ## Objective
 To perform an end-to-end RNA-Seq analysis pipeline on real sequencing data, replicating workflows used in bioinformatics research.
+ 
+# NGS RNA-Seq Analysis Pipeline
+
 
 ## Overview
 This project demonstrates a complete RNA-Seq data analysis workflow, starting from raw sequencing data to alignment and visualization. It replicates real-world bioinformatics pipelines used in research and industry.
@@ -102,6 +102,14 @@ bowtie2 -x hg38 -U trimmed.fastq -S output.sam
 samtools view -bS output.sam > output.bam
 samtools flagstat output.bam
 ```
+---
+
+## 🔍 Key Insights
+
+- High alignment rate (~93.5%) indicates high-quality sequencing data  
+- Coverage peaks correspond to expressed genomic regions  
+- Minimal adapter contamination confirms data reliability
+
 ---
 
 ## Conclusion
