@@ -82,31 +82,31 @@ Aligned RNA-seq reads mapped to the TP53 gene region showing clear coverage peak
 ### 📊 Quality Control (Falco)
 
 #### Basic Statistics
-![Basic Stats](screenshots/Basic%20stats.png)
+![Basic Stats](screenshots/basic_stats.png)
 
 #### Per Base Sequence Quality
-![Per Base Quality](screenshots/per%20base%20sequence%20quality.png)
+![Per Base Quality](screenshots/per_base_sequence_quality.png)
 
 #### Per Sequence Quality Scores
-![Quality Scores](screenshots/per%20sequence%20quality%20scores.png)
+![Quality Scores](screenshots/per_sequence_quality_scores.png)
 
 #### Per Base Sequence Content
-![Sequence Content](screenshots/per%20base%20sequence%20content.png)
+![Sequence Content](screenshots/per_base_sequence_content.png)
 
 #### Per Base N Content
-![N Content](screenshots/per%20base%20N%20content.png)
+![N Content](screenshots/per_base_n_content.png)
 
 #### GC Content
-![GC Content](screenshots/per%20sequence%20GC%20content.png)
+![GC Content](screenshots/per_sequence_gc_content.png)
 
 #### Sequence Length Distribution
-![Length Distribution](screenshots/sequence%20length%20distribution.png)
+![Length Distribution](screenshots/sequence_length_distribution.png)
 
 #### Sequence Duplication Levels
-![Duplication Levels](screenshots/sequence%20duplication%20levels.png)
+![Duplication Levels](screenshots/sequence_duplication_levels.png)
 
 #### Adapter Content
-![Adapter Content](screenshots/Adapter%20content.png)
+![Adapter Content](screenshots/adapter_content.png)
 ---
 
 ##  How to Run
