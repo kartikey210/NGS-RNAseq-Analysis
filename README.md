@@ -70,25 +70,43 @@ SRA → FASTQ → Quality Control → Trimming → Alignment → BAM → Visuali
 
 ---
 
-## Results Visualization
+## 📸 Results Visualization
 
-### IGV Visualization (TP53 Gene)
+### 🔬 IGV Visualization (TP53 Gene)
 ![IGV Result](screenshots/igv_tp53_alignment.png)
 
-The IGV visualization shows aligned RNA-seq reads mapped to the TP53 gene region, with clear coverage peaks indicating successful alignment.
+Aligned RNA-seq reads mapped to the TP53 gene region showing clear coverage peaks.
 
 ---
 
-### Quality Control (Falco)
+### 📊 Quality Control (Falco)
+
+#### Basic Statistics
+![Basic Stats](screenshots/Basic stats.png)
 
 #### Per Base Sequence Quality
-![Per Base Quality](screenshots/per_base_sequence_quality.png)
+![Per Base Quality](screenshots/per base sequence quality.png)
+
+#### Per Sequence Quality Scores
+![Quality Scores](screenshots/per sequence quality scores.png)
+
+#### Per Base Sequence Content
+![Sequence Content](screenshots/per base sequence content.png)
+
+#### Per Base N Content
+![N Content](screenshots/per base N content.png)
 
 #### GC Content
-![GC Content](screenshots/per_sequence_gc_content.png)
+![GC Content](screenshots/per sequence GC content.png)
+
+#### Sequence Length Distribution
+![Length Distribution](screenshots/sequence length distribution.png)
+
+#### Sequence Duplication Levels
+![Duplication Levels](screenshots/sequence duplication levels.png)
 
 #### Adapter Content
-![Adapter Content](screenshots/adapter_content.png)
+![Adapter Content](screenshots/Adapter content.png)
 
 ---
 
