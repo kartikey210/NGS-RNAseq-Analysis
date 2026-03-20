@@ -1,0 +1,7 @@
+prefetch SRR390728
+fasterq-dump SRR390728
+fastqc sample.fastq
+trimmomatic SE sample.fastq trimmed.fastq SLIDINGWINDOW:4:20 MINLEN:25
+bowtie2 -x hg38 -U trimmed.fastq -S output.sam
+samtools view -bS output.sam > output.bam
+samtools flagstat output.bam
