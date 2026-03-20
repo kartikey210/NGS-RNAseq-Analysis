@@ -1,6 +1,9 @@
  End-to-end RNA-Seq analysis pipeline using real sequencing data
 # NGS RNA-Seq Analysis Pipeline
 
+## Objective
+To perform an end-to-end RNA-Seq analysis pipeline on real sequencing data, replicating workflows used in bioinformatics research.
+
 ## Overview
 This project demonstrates a complete RNA-Seq data analysis workflow, starting from raw sequencing data to alignment and visualization. It replicates real-world bioinformatics pipelines used in research and industry.
 
@@ -89,6 +92,25 @@ The IGV visualization shows aligned RNA-seq reads mapped to the TP53 gene region
 
 ---
 
+##  How to Run
+
+```bash
+prefetch SRR390728
+fasterq-dump SRR390728
+trimmomatic SE input.fastq trimmed.fastq SLIDINGWINDOW:4:20 MINLEN:25
+bowtie2 -x hg38 -U trimmed.fastq -S output.sam
+samtools view -bS output.sam > output.bam
+samtools flagstat output.bam
+
+---
+
+###  Conclusion
+```markdown
+## Conclusion
+This project demonstrates practical experience with NGS data processing, alignment, and biological interpretation.
+
+---
+
 ## Conclusion
 
 The pipeline successfully processed RNA-Seq data, demonstrating effective preprocessing, high-quality alignment, and accurate visualization of genomic reads.
@@ -96,6 +118,14 @@ The pipeline successfully processed RNA-Seq data, demonstrating effective prepro
 This project reflects hands-on experience with real bioinformatics workflows used in research and industry.
 
 ---
+
+## Skills Demonstrated
+- NGS Data Analysis  
+- RNA-Seq Pipeline  
+- Sequence Alignment  
+- Bioinformatics Tools
+
+--- 
 
 ## Author
 
