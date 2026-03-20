@@ -101,17 +101,11 @@ trimmomatic SE input.fastq trimmed.fastq SLIDINGWINDOW:4:20 MINLEN:25
 bowtie2 -x hg38 -U trimmed.fastq -S output.sam
 samtools view -bS output.sam > output.bam
 samtools flagstat output.bam
-
+```
 ---
 
-###  Conclusion
-```markdown
 ## Conclusion
 This project demonstrates practical experience with NGS data processing, alignment, and biological interpretation.
-
----
-
-## Conclusion
 
 The pipeline successfully processed RNA-Seq data, demonstrating effective preprocessing, high-quality alignment, and accurate visualization of genomic reads.
 
